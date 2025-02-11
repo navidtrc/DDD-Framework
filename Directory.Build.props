@@ -1,0 +1,19 @@
+<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+<Project>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<VersionSuffix>2.0.0.$([System.DateTime]::Now.ToString(MMddHHmm))</VersionSuffix>
+		<FrameworkVer>2.0.0.$(VersionSuffix)</FrameworkVer>
+		<AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+		<Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<Deterministic>false</Deterministic>
+	</PropertyGroup>
+</Project>

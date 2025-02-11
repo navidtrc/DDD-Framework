@@ -1,0 +1,16 @@
+<Project>
+	<PropertyGroup>
+		<!-- Enable central package management, https://learn.microsoft.com/en-us/nuget/consume-packages/Central-Package-Management -->
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageVersion Include="Ardalis.GuardClauses" Version="5.0.0" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.12" />
+		<PackageVersion Include="Microsoft.Extensions.Identity.Core" Version="8.0.12" />
+		<PackageVersion Include="Pluralize.NET" Version="1.0.2" />
+		<PackageVersion Include="Serilog.AspNetCore" Version="9.0.0" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+variables:
+  GIT_STRATEGY: clone
+
+stages:
+  - build and push 
+  # - push-prod
+
+# Pushes
+push-nexus:
+  stage: build and push 
+  tags:
+    - runner
+  script:
+    - export DOTNET_NUGET_SIGNATURE_VERIFICATION=false  # Disable NuGet signature verification
+    # - dotnet nuget add source https://nexus.hesabo.dev/repository/nuget-group/index.json --name HesaboLab  # Add custom NuGet source
+    # - dotnet nuget remove source nuget.org  # Remove the default NuGet source
+    # - dotnet nuget list source  # List available NuGet sources
+    - dotnet build  # Build the project
+    # - dotnet nuget add source https://nexus.hesabo.dev/repository/nuget-hosted/ -n nexus -u admin -p devops@123 --store-password-in-clear-text
+    - dotnet nuget push **/*.nupkg --source nexus 
+
+  only:
+    - develop
+    - merge_requests
