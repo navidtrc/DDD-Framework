@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<VersionPrefix>$(FrameworkVer)</VersionPrefix>
-		<PackageProjectUrl>http://nexus.YOUR_HOST.COM/repository/nuget-hosted</PackageProjectUrl>
-		<RepositoryUrl>https://gitlab.YOUR_HOST.COM/backend/framework</RepositoryUrl>
+		<RepositoryUrl>https://github.com/navidtrc/DDD-Framework</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>Framework.Core.Domain;Foundation</PackageTags>
 		<IsPackable>true</IsPackable>

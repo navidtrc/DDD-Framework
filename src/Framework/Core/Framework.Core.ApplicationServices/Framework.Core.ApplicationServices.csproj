@@ -1,9 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <VersionPrefix>$(FrameworkVer)</VersionPrefix>
+        <RepositoryUrl>https://github.com/navidtrc/DDD-Framework</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Framework.Core.ApplicationServices;Foundation</PackageTags>
+        <IsPackable>true</IsPackable>
+        <PackageId>Framework.Core.ApplicationServices</PackageId>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Platforms>AnyCPU</Platforms>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <DebugType>embedded</DebugType>
         <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
 </Project>

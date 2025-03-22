@@ -9,8 +9,8 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<VersionSuffix>2.0.0.$([System.DateTime]::Now.ToString(MMddHHmm))</VersionSuffix>
-		<FrameworkVer>2.0.0.$(VersionSuffix)</FrameworkVer>
+		<VersionSuffix>1.0.0.$([System.DateTime]::Now.ToString(MMddHHmm))</VersionSuffix>
+		<FrameworkVer>1.0.0.$(VersionSuffix)</FrameworkVer>
 		<AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
 		<Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
