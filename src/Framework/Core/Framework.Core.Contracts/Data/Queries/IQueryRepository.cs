@@ -1,9 +1,7 @@
-﻿namespace Framework.Contracts.Data.Queries;
+﻿namespace Framework.Core.Contracts.Data.Queries;
 
 /// <summary>
 /// تعریف کوئری‌های پایه مورد نیاز در سامانه در این Interface قرار می‌گیرد.
 /// </summary>
-public interface IQueryRepository
-{
-}
+public interface IQueryRepository;
 
