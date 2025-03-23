@@ -38,6 +38,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{EA8A00F0-AAC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NoSql", "NoSql", "{81C47DE4-E2FE-4CB2-88D3-9CAD9008C1CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Infra.Data.Sql.Commands", "src\Framework\Infra\Data\Sql\Framework.Infra.Data.Sql.Commands\Framework.Infra.Data.Sql.Commands.csproj", "{ACA06C4C-7E6C-40CE-ABE4-E2212674E842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{53C19E2E-2C6E-4778-B84C-49A2F3E6D622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53C19E2E-2C6E-4778-B84C-49A2F3E6D622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53C19E2E-2C6E-4778-B84C-49A2F3E6D622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA06C4C-7E6C-40CE-ABE4-E2212674E842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA06C4C-7E6C-40CE-ABE4-E2212674E842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA06C4C-7E6C-40CE-ABE4-E2212674E842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA06C4C-7E6C-40CE-ABE4-E2212674E842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{C6470C33-8231-4535-9B52-31395A44D7EC} = {85C919A8-9BC8-4C68-A5DB-528CDF062166}
 		{EA8A00F0-AACE-4796-833A-C6AE34D38350} = {C6470C33-8231-4535-9B52-31395A44D7EC}
 		{81C47DE4-E2FE-4CB2-88D3-9CAD9008C1CD} = {C6470C33-8231-4535-9B52-31395A44D7EC}
+		{ACA06C4C-7E6C-40CE-ABE4-E2212674E842} = {EA8A00F0-AACE-4796-833A-C6AE34D38350}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72044DB3-892D-4F42-8E99-A75CCE2B9C93}

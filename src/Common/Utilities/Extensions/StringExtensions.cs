@@ -95,6 +95,11 @@ public static class StringExtensions
     {
         return str.Trim().FixPersianChars().Fa2En().NullIfEmpty();
     }
+    
+    public static string CleanString(this object data)
+    {
+        return data == null ? null : CleanString(data.ToString());
+    }
 
     public static string NullIfEmpty(this string str)
     {
