@@ -7,11 +7,30 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" />
         <PackageReference Include="FluentValidation.AspNetCore"/>
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"/>
         <PackageReference Include="Microsoft.Extensions.DependencyModel"/>
         <PackageReference Include="Scrutor"/>
         <PackageReference Include="Microsoft.Data.SqlClient"/>
+        <PackageReference Include="Serilog"/>
+        <PackageReference Include="Serilog.Sinks.Console" />
+        <PackageReference Include="Serilog.Sinks.File" />
+        <PackageReference Include="Serilog.AspNetCore" />
+        <PackageReference Include="Serilog.Enrichers.Environment" />
+        <PackageReference Include="Serilog.Enrichers.Thread" />
+        <PackageReference Include="Serilog.Enrichers.Process" />
+        <PackageReference Include="Serilog.Enrichers.CorrelationId" />
+        <PackageReference Include="Serilog.Enrichers.ClientInfo" />
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Filters" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" />
+        <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" />
+        <PackageReference Include="Asp.Versioning.Mvc" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+        
     </ItemGroup>
 
     <ItemGroup>
@@ -24,21 +43,23 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Using Include="Microsoft.AspNetCore.Builder" />
-        <Using Include="Microsoft.AspNetCore.Hosting" />
-        <Using Include="Microsoft.Extensions.Configuration" />
-        <Using Include="Microsoft.Extensions.Hosting" />
-        <Using Include="Microsoft.Extensions.DependencyInjection" />
-        <Using Include="Microsoft.Extensions.Logging" />
-        <Using Include="Microsoft.Extensions.DependencyModel" />
-        <Using Include="System.Reflection" />
-        <Using Include="Framework.Core.Contracts.ApplicationServices.Commands" />
-        <Using Include="Framework.Core.Contracts.ApplicationServices.Queries" />
-        <Using Include="Framework.Core.RequestResponse.Common" />
-        <Using Include="Framework.Core.RequestResponse.Commands" />
-        <Using Include="Framework.Core.RequestResponse.Queries" />
-        <Using Include="Framework.Core.Contracts.Data.Commands" />
-        <Using Include="Framework.Core.Contracts.Data.Queries" />
+        <Using Include="Microsoft.AspNetCore.Builder"/>
+        <Using Include="Microsoft.AspNetCore.Hosting"/>
+        <Using Include="Microsoft.Extensions.Configuration"/>
+        <Using Include="Microsoft.Extensions.Hosting"/>
+        <Using Include="Microsoft.Extensions.DependencyInjection"/>
+        <Using Include="Microsoft.Extensions.Logging"/>
+        <Using Include="Microsoft.Extensions.DependencyModel"/>
+        <Using Include="System.Reflection"/>
+        <Using Include="Framework.Core.Contracts.ApplicationServices.Commands"/>
+        <Using Include="Framework.Core.Contracts.ApplicationServices.Queries"/>
+        <Using Include="Framework.Core.RequestResponse.Common"/>
+        <Using Include="Framework.Core.RequestResponse.Commands"/>
+        <Using Include="Framework.Core.RequestResponse.Queries"/>
+        <Using Include="Framework.Core.Contracts.Data.Commands"/>
+        <Using Include="Framework.Core.Contracts.Data.Queries"/>
     </ItemGroup>
+
     
+
 </Project>
