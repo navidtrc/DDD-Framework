@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentValidation.AspNetCore"/>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyModel"/>
+        <PackageReference Include="Scrutor"/>
+        <PackageReference Include="Microsoft.Data.SqlClient"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Common\Utilities\Utilities.csproj"/>
+        <ProjectReference Include="..\..\Core\Framework.Core.ApplicationServices\Framework.Core.ApplicationServices.csproj"/>
+        <ProjectReference Include="..\..\Core\Framework.Core.Contracts\Framework.Core.Contracts.csproj"/>
+        <ProjectReference Include="..\..\Core\Framework.Core.Domain.Toolkits\Framework.Core.Domain.Toolkits.csproj"/>
+        <ProjectReference Include="..\..\Core\Framework.Core.Domain\Framework.Core.Domain.csproj"/>
+        <ProjectReference Include="..\..\Core\Framework.Core.RequestResponse\Framework.Core.RequestResponse.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Microsoft.AspNetCore.Builder" />
+        <Using Include="Microsoft.AspNetCore.Hosting" />
+        <Using Include="Microsoft.Extensions.Configuration" />
+        <Using Include="Microsoft.Extensions.Hosting" />
+        <Using Include="Microsoft.Extensions.DependencyInjection" />
+        <Using Include="Microsoft.Extensions.Logging" />
+        <Using Include="Microsoft.Extensions.DependencyModel" />
+        <Using Include="System.Reflection" />
+        <Using Include="Framework.Core.Contracts.ApplicationServices.Commands" />
+        <Using Include="Framework.Core.Contracts.ApplicationServices.Queries" />
+        <Using Include="Framework.Core.RequestResponse.Common" />
+        <Using Include="Framework.Core.RequestResponse.Commands" />
+        <Using Include="Framework.Core.RequestResponse.Queries" />
+        <Using Include="Framework.Core.Contracts.Data.Commands" />
+        <Using Include="Framework.Core.Contracts.Data.Queries" />
+    </ItemGroup>
+    
+</Project>
